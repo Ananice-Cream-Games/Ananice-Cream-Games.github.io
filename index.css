@@ -1,0 +1,122 @@
+* {
+    --bg: #202020;
+    --bg-l: #303030;
+    --bg-ll: #404040;
+
+    --txt: #eee;
+    --txt-gr: #ddd;
+
+    --prim: #e28b39;
+    --sec: #dda130;
+
+    color: var(--txt);
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+
+    outline: 0px dotted green;
+
+    transition: 0.2s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    background: repeating-linear-gradient(45deg, var(--prim), var(--prim) 70px, var(--sec) 70px, var(--sec) 140px);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #404040;
+    border-radius: 5px;
+
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 20px;
+    margin: 5px;
+}
+
+.btn.color {
+    background: linear-gradient(90deg, var(--prim), var(--sec));
+}
+
+.btn:hover {
+    transform: scale(110%);
+}
+
+nav {
+    display: flex;
+    background-color: var(--bg-l);
+    height: 3rem;
+
+    padding: 10px 20px;
+}
+
+nav > * {
+    line-height: 2rem;
+}
+
+header {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 50px 200px;
+
+    background-color: var(--bg);
+    border-radius: 50px 50px 0 0;
+    box-shadow: black 0 0 30px -10px;
+}
+
+.page > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+
+
+.page > div > p {
+    margin: 20px 50px 0;
+}
+
+.page > div > ul {
+    margin: 20px 30px 0;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    padding: 20px 0 0 50px;
+    background-color: var(--bg-l)
+}

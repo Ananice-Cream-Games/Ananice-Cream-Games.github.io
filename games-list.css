@@ -1,0 +1,41 @@
+.games-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+
+    height: 9rem;
+    overflow: hidden;
+
+    background-color: var(--bg-l);
+    border-radius: 20px;
+
+    margin: 10px;
+}
+
+.game-image {
+    width: calc(10% + 200px);
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 10px 20px;
+}
+
+.game-title {
+    font-size: 1.7rem;
+    margin: 0 0 10px 0;
+}
+
+.game-desc {
+    font-size: 0.8rem;
+    margin: 0 0 20px 0;
+}
+
+.game-info > a {
+    font-size: 1rem;
+}
