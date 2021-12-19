@@ -85,6 +85,10 @@ nav > a {
     font-size: 1.2rem;
 }
 
+.top-margin {
+    margin-bottom: 3.5rem;
+}
+
 header {
     height: 50vh;
     display: flex;
@@ -112,6 +116,10 @@ header > .page-title {
     box-shadow: black 0 0 30px -10px;
 }
 
+.page.screen-size {
+    height: 100vh;
+}
+
 .page > div {
     display: flex;
     flex-direction: column;
@@ -134,4 +142,8 @@ footer {
     height: 5rem;
     padding: 20px 0 0 50px;
     background-color: var(--bg-l)
+}
+
+iframe.game {
+    height: auto;
 }
