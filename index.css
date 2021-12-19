@@ -144,7 +144,9 @@ footer {
 
 iframe.phone-game {
     width: 45vh;
-    height: 80vh;
+    height: 100vh;
+    border: 1px solid var(--bg-l);
+    background: repeating-linear-gradient(45deg, var(--bg), var(--bg) 70px, var(--bg-l) 70px, var(--bg-l) 140px);
 }
 
 @media (max-width: 1500px)  {
