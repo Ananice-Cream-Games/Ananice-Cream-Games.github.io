@@ -149,6 +149,15 @@ iframe.phone-game {
     background: repeating-linear-gradient(45deg, var(--bg), var(--bg) 70px, var(--bg-l) 70px, var(--bg-l) 140px);
 }
 
+.unity-canvas {
+    padding: 0px !important; 
+    position: absolute !important; 
+    left: auto !important;
+    top: auto !important;
+    height:100vh !important; 
+    width:100vw !important;
+}
+
 @media (max-width: 1500px)  {
     .page {
         padding: 50px 50px;
