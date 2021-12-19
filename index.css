@@ -142,15 +142,10 @@ footer {
 }
 
 iframe.phone-game {
-    width: 45vh;
+    width: calc((100vh - 80px - 3.5rem) * 1080 / 1920);
     height: calc(100vh - 80px - 3.5rem);
     border: 1px solid var(--bg-l);
     background: repeating-linear-gradient(-45deg, var(--bg), var(--bg) 70px, black 70px, black 140px);
-}
-
-p.loading {
-    position: absolute;
-    bottom: 50vh;
 }
 
 @media (max-width: 1500px)  {
