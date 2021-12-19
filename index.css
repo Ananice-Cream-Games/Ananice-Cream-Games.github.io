@@ -6,8 +6,9 @@
     --txt: #eee;
     --txt-gr: #ddd;
 
-    --prim: #e28b39;
-    --sec: #dda130;
+    --prim: #e94a00;
+    --prim-l: #e67913;
+    --sec: #e28800;
 
     color: var(--txt);
     font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +26,7 @@ body {
     align-items: center;
 
     margin: 0;
-    background: repeating-linear-gradient(45deg, var(--prim), var(--prim) 70px, var(--sec) 70px, var(--sec) 140px);
+    background: repeating-linear-gradient(45deg, var(--prim-l), var(--prim-l) 70px, var(--sec) 70px, var(--sec) 140px);
 }
 
 h1 {
@@ -58,6 +59,7 @@ a {
 }
 
 nav {
+    z-index: 10;
     position: fixed;
     left: 0;
     right: 0;
@@ -89,7 +91,7 @@ nav > a {
 }
 
 header {
-    height: 50vh;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,6 +102,13 @@ header > .page-title {
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
+
+    font-weight: 1000;
+}
+
+.ananice {
+    height: 10rem;
+    transform: rotate(-30deg) translateX(-10px);
 }
 
 .page {
