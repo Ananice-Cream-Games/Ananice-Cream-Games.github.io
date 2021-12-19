@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: row;
 
-    height: 9rem;
     overflow: hidden;
 
     background-color: var(--bg-l);
@@ -19,6 +18,11 @@
 
 .game-image {
     width: calc(10% + 200px);
+}
+
+.game-image > img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -38,4 +42,15 @@
 
 .game-info > a {
     font-size: 1rem;
+}
+
+@media (max-width: 800px)  {
+    .game {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-image {
+        width: 100%;
+    }
 }

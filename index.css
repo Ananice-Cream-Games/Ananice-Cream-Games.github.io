@@ -44,7 +44,6 @@ a {
     background-color: #404040;
     border-radius: 5px;
 
-    height: 2rem;
     line-height: 2rem;
     padding: 0 20px;
     margin: 5px;
@@ -127,7 +126,6 @@ header > .page-title {
     margin: 0 0 50px 0;
 }
 
-
 .page > div > p {
     margin: 20px 50px 0;
 }
@@ -147,4 +145,32 @@ footer {
 iframe.phone-game {
     width: 45vh;
     height: 80vh;
+}
+
+@media (max-width: 1500px)  {
+    .page {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 800px)  {
+    .page {
+        border-radius: 20px 20px 0 0;
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 600px)  {
+    .page > div > p {
+        margin: 20px 20px 0;
+    }
+
+    nav > .page-title {
+        font-size: 1.2rem;
+    }
+    
+    nav > a {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
 }
